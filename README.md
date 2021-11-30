@@ -1,0 +1,77 @@
+---
+home: true
+heroText: Lbox.js
+heroImage: /logo.svg
+tagline: A simple and beautiful bitcoin cash library of nodejs.
+
+bgImageStyle: { height: "450px" }
+isShowTitleInHome: true
+actionText: Guide
+actionLink: /docs/
+features:
+  - title: Easy
+  
+    details: work with same way of bitbox or bchjs , we are making this library
+  - title: Dependencies
+    details: lbox is just use libauth dependencies becase it is zero dependencies
+  - title: Extended
+    details: you can extended library to add new methods or data
+---
+
+<br/>
+
+### install
+
+<CodeSwitcher :languages="{npm:'Npm',yarn:'Yarn'}" name="packge-manger">
+  <template v-slot:npm>
+
+```bash
+npm i lbox
+```
+
+  </template>
+  <template v-slot:yarn>
+
+```bash
+yarn add lbox
+```
+
+  </template>
+</CodeSwitcher>
+
+### lbox vs libauth syntax
+
+<CodeSwitcher :languages="{lbox:'Lbox' , libauth:'libauth'}" name="libauth-bitbox">
+  <template v-slot:lbox>
+
+```js
+lbox.Address.toLegacyAddress(
+  "bitcoincash:qzm47qz5ue99y9yl4aca7jnz7dwgdenl85jkfx3znl"
+);
+```
+
+  </template>
+  <template v-slot:libauth>
+
+```js
+let decoded;
+let type;
+if (cashAddress.split(":").length == 2) {
+  // decode Address with prefix
+  decoded = libauth.decodeCashAddress(cashAddress);
+  if (typeof decoded != "object") throw new Error(decoded);
+  type = libauth.CashAddressType[decoded.type].toLocaleLowerCase();
+} else {
+  decoded = libauth.decodeCashAddressFormatWithoutPrefix(cashAddress);
+  if (typeof decoded != "object") throw new Error(decoded);
+  type = libauth.CashAddressType[decoded.version].toLocaleLowerCase();
+}
+
+// check if Address from test net
+type = decoded.prefix == "bitcoincash" ? type : type + "-testnet";
+
+libauth.encodeBase58Address(this.instantiateSha256, type, decoded.hash);
+```
+
+  </template>
+</CodeSwitcher>
