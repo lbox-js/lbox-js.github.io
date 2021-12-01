@@ -1,0 +1,4 @@
+.content__default *:not(pre) > code{
+    color: var(--text-color) !important;
+}
+
