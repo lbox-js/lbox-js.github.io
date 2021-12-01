@@ -2,7 +2,7 @@
 home: true
 heroText: Lbox.js
 heroImage: /logo.svg
-tagline: A simple and beautiful bitcoin cash library of nodejs.
+tagline: A simple and beautiful bitcoin cash  nodejs library.
 
 bgImageStyle: { height: "450px" }
 isShowTitleInHome: true
@@ -10,12 +10,11 @@ actionText: Guide
 actionLink: /docs/
 features:
   - title: Easy
-  
-    details: work with same way of bitbox or bchjs , we are making this library
+    details: Simple syntax similar to bitbox/bchjs
   - title: Dependencies
     details: lbox is just use libauth dependencies becase it is zero dependencies
   - title: Extended
-    details: you can extended library to add new methods or data
+    details: you can extended the library to add new methods
 ---
 
 <br/>
