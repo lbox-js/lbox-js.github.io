@@ -20,12 +20,14 @@ module.exports = {
       { text: "Docs", link: "/docs" },
       {
         text: "accounts",
-        icon: "reco-message",
         items: [
           {
             text: "GitHub",
-            link: "https://github.com/salemkode/lbox",
-            icon: "reco-github",
+            link: "https://github.com/lbox-js/lbox",
+          },
+          {
+            text: "telegram",
+            link: "https://t.me/bitauth",
           },
         ],
       },
