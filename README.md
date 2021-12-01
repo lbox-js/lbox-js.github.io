@@ -53,3 +53,11 @@ libauth.encodeBase58Address(this.instantiateSha256, type, decoded.hash);
 
   </template>
 </CodeSwitcher>
+
+## support
+
+> BCH :
+>
+> bitcoincash:qqqxpdhdu8umgzr9adzfvypdu65xqtejtq9nssqyww
+
+<img src="./.vuepress/public/qrcode.png" />
