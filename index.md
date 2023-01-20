@@ -12,9 +12,9 @@ features:
   - title: Easy
     details: Simple syntax similar to bitbox/bchjs
   - title: Dependencies
-    details: lbox is just use libauth dependencies becase it is zero dependencies
+    details: Lbox just uses libauth as dependency because it has zero dependencies
   - title: Extended
-    details: you can extended the library to add new methods
+    details: You can extended the library to add new methods
 ---
 
 <br/>
