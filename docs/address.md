@@ -521,7 +521,7 @@ lbox.Address.detectAddressType("mqc1tmwY2368LLGktnePzEyPAsgADxbksi");
 
 <br />
 
-> <b>importent note before use fromXPub function init lbox with [lbox.init()](./init) </b>
+> <b>important note before using fromXPub function init lbox with [lbox.init()](./init) </b>
 
 <br />
 
@@ -574,7 +574,7 @@ async () => {
 
 <br />
 
-> <b>importent note before use fromXPub function init lbox with [lbox.init()](./init) </b>
+> <b>important note before using fromXPub function init lbox with [lbox.init()](./init) </b>
 
 <br />
 

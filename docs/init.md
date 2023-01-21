@@ -1,5 +1,5 @@
 ---
-title: init
+title: Init
 ---
 
 instantiate WebAssembly ECDSA & Schnorr & WebAssembly Hashing Functions
